@@ -39,7 +39,7 @@
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+  <header style="background-color: #fff;" class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -55,7 +55,7 @@
               <li class="scroll-to-section"><a href="#about">About Us</a></li>
               <li class="scroll-to-section"><a href="#services">Services</a></li>
               <li class="scroll-to-section"><a href="#Countries">Countries</a></li>  
-              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Us</a></div></li> 
+              <li><div class="main-red-button"><a href="#divOne">Contact Us</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -316,6 +316,26 @@
     </div>
   </div>
 
+  <div class="overlay" id="divOne">
+		<div class="wrapper">
+			<h2>Please Fill up The Form</h2><a class="close" href="#">&times;</a>
+			<div class="content">
+				<div class="container">
+					<form class="cOntact-us">
+						<label>First Name</label>
+						<input placeholder="Your name.." type="text">
+						<label>Last Name</label>
+						<input placeholder="Your last name.." type="text">
+            <label>Email</label>
+            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+						<label>Message</label> 
+						<textarea iplaceholder="Write something.."></textarea>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
   <footer>
     <div class="container">

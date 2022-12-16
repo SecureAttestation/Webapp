@@ -268,6 +268,7 @@ body {
   letter-spacing: 0.25px;
 }
 
+
 /* 
 ---------------------------------------------
 header
@@ -298,12 +299,12 @@ header
 }
 
 .header-area {
-  background-color: #fafafa;
+  background-color: white ;
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
-  z-index: 100;
+  z-index: 50;
   height: 100px;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
@@ -1364,7 +1365,7 @@ form#contact textarea {
 }
 
 form#contact textarea::placeholder {
-  color: #2a2a2a;
+  color: #2a2a2a; 
 }
 
 form#contact button {
@@ -1381,6 +1382,96 @@ form#contact button {
   outline: none;
   transition: all .3s;
 }
+
+.overlay {
+  z-index: 100;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+.overlay .wrapper {
+	margin: 70px auto;
+	padding: 20px;
+	background: white;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+.overlay .wrapper h2 {
+  margin-left: 7px;
+	margin-top: 2px;
+	color: #333;
+}
+.overlay .wrapper .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.overlay .wrapper .close:hover {
+	color: #06D85F;
+}
+.overlay .wrapper .content {
+	max-height: 30%;
+	overflow: auto;
+}
+
+/*form*/
+
+.cOntact-us {
+
+  text-align: center;
+}
+
+.overlay .container {
+	border-radius: 5px;
+	background-color: white;
+	padding: 20px 0;
+}
+form label {
+  text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+.cOntact-us input[type=text], select, textarea {
+  border: none;
+	width: 100%;
+	padding: 12px;
+	background-color:  #d1f3ff;
+	border-radius: 20px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+.cOntact-us input[type="submit"] {
+	background-color: #03a4ed;
+	color: #fff;
+	padding: 15px 50px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
 
 
 /* 
