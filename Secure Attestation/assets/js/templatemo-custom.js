@@ -67,9 +67,19 @@
       }
     }
   });
+/*
+  $(document).click(function (e) {
+    if ($(e.target).is('#divOne')) {
+        $('#openModal').fadeOut(500);
+    }
+
+});
+*/
 
   $(document).ready(function () {
       $(document).on("scroll", onScroll);
+      $('div.main-red-button a')[0].click();
+      $('#currentYear').text(new Date().getFullYear());
       
       //smoothscroll
       $('.scroll-to-section a[href^="#"]').on('click', function (e) {
