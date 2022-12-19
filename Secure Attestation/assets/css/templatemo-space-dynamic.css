@@ -618,7 +618,7 @@ header
 }
 
 .header-area.header-sticky {
-  min-height: 80px;
+  min-height: 90px;
 }
 
 .header-area .nav {
@@ -1404,7 +1404,7 @@ form#contact button {
 	padding: 20px;
 	background: white;
 	border-radius: 5px;
-	width: 30%;
+	width: 50%;
 	position: relative;
 	transition: all 5s ease-in-out;
 }
@@ -1472,6 +1472,41 @@ form label {
 	letter-spacing: 3px;
 }
 
+/*
+-------------
+whatsapp icon
+-------------
+*/
+.whats-app {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 10px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  left: 15px;
+}
+
+.my-float {
+  margin-top: 8px;
+}
+
+/*
+------------------ 
+update section
+------------------
+*/
+.news{
+  width: 160px
+}
+.news-scroll a{
+  text-decoration: none
+}
 
 
 /* 
