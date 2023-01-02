@@ -287,7 +287,7 @@
    </div>
   </div>
 
-  <div id="contact" class="contact-us section">
+  <div id="contactDiv" class="contact-us section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
@@ -301,11 +301,11 @@
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="email/sendEmail.php" method="post">
+          <form id="contact" class="resetForm">
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="text" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                  <input type="text" name="firstname" id="firstname" placeholder="Firstname" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
@@ -343,7 +343,7 @@
 		  <h2>Get in touch</h2><a class="close" href="#">&times;</a>
         <div class="col-lg-12 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s"></div>
 				<div class="container">
-					<form class="cOntact-us" style="margin-top: 10px"action="email/sendEmail.php" method="post">
+					<form id="getInTouchForm" class="cOntact-us resetForm" style="margin-top: 10px">
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
@@ -372,6 +372,18 @@
               </div>
             </div>
 					</form>
+				</div>
+		</div>
+	</div>
+  
+  <div style="display: none;" id="messagePopup"><a href="#enquiryMessage">Message Popup</a></div>
+
+  <div class="overlay" id="enquiryMessage">
+		<div class="wrapper">
+		  <a class="close" href="#">&times;</a>
+        <div class="col-lg-12 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s"></div>
+				<div class="container">
+					<p id="msgString"></p>
 				</div>
 		</div>
 	</div>

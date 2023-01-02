@@ -27,5 +27,10 @@
                                                    (y) Agree the Changes
                                                    (y) Agree to Let's Encrypt Subscrber Agreement
 
+                    ** Email related setup (sendmail) for server **
+           https://www.cloudbooklet.com/how-to-install-and-setup-sendmail-on-debian-10/
+
+                
+
 
          

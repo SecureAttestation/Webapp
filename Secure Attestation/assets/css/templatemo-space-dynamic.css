@@ -1499,6 +1499,17 @@ whatsapp icon
 }
 
 /*
+-------------
+await message loading icon
+-------------
+*/
+#awaitMsgSent {
+  position: inherit;
+  width: 20%;
+  height: 15vh;
+  }
+
+/*
 ------------------ 
 update section
 ------------------
@@ -1538,6 +1549,9 @@ responsive
   }
   .overlay .wrapper {
     width: 60%
+  }
+  #awaitMsgSent {
+    margin-left: 40%;
   }
 }
 
@@ -1646,6 +1660,9 @@ responsive
   .overlay .wrapper {
     width: 60%
   }
+  #awaitMsgSent {
+    margin-left: 40%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1679,5 +1696,8 @@ responsive
   }
   .overlay .wrapper {
     width: 80%
+  }
+  #awaitMsgSent {
+    margin-left: 15%;
   }
 }

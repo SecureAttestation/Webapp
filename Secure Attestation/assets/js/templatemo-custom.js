@@ -80,6 +80,11 @@
       $(document).on("scroll", onScroll);
       $('div.main-red-button a')[0].click();
       $('#currentYear').text(new Date().getFullYear());
+      var message = getUrlParameter('msg');
+      if(message){
+        $('p#msgString').html('<p>'+message+'</p>');
+        $('div#messagePopup a')[0].click();
+      }
       
       //smoothscroll
       $('.scroll-to-section a[href^="#"]').on('click', function (e) {
@@ -118,6 +123,13 @@
       });
   }
 
+  function getUrlParameter(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
 
 
 	// Page loading animation
@@ -139,6 +151,41 @@
     });
   }
 
+  $(function () {
+    $('form#contact').submit(function (e) {
+      $('p#msgString').html('<img id="awaitMsgSent" src="assets/images/msgAwaiting.gif"/>');
+      $('div#messagePopup a')[0].click();
+      e.preventDefault();
+      $.ajax({
+        type: 'post',
+        url: 'email/sendEmail.php',
+        data: $('form#contact').serialize(),
+        success: function () {
+          $('p#msgString').html('<p>Secure Attestation team will process your enquiry and will get back with details soon</p>');
+          $('form#contact').trigger("reset");
+        }
+      });
+    });
 
+  });
+
+  $(function () {
+    $('form#getInTouch').submit(function (e) {
+      $('div#divOne a')[0].click();
+      $('p#msgString').html('<img id="awaitMsgSent" src="assets/images/msgAwaiting.gif"/>');
+      $('div#messagePopup a')[0].click();
+      e.preventDefault();
+      $.ajax({
+        type: 'post',
+        url: 'email/sendEmail.php',
+        data: $('form#getInTouch').serialize(),
+        success: function () {
+          $('p#msgString').html('<p>Secure Attestation team will process your enquiry and will get back with details soon</p>');
+          $('form#getInTouch').trigger("reset");
+        }
+      });
+    });
+
+  });
 
 })(window.jQuery);
