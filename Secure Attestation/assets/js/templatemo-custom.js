@@ -153,7 +153,7 @@
 
   $(function () {
     $('form#contact').submit(function (e) {
-      $('p#msgString').html('<img id="awaitMsgSent" src="assets/images/msgAwaiting.gif"/>');
+      $('div#cssload-main');
       $('div#messagePopup a')[0].click();
       e.preventDefault();
       $.ajax({
@@ -170,18 +170,18 @@
   });
 
   $(function () {
-    $('form#getInTouch').submit(function (e) {
+    $('form#getInTouchForm').submit(function (e) {
       $('div#divOne a')[0].click();
-      $('p#msgString').html('<img id="awaitMsgSent" src="assets/images/msgAwaiting.gif"/>');
+      $('div#cssload-main');
       $('div#messagePopup a')[0].click();
       e.preventDefault();
       $.ajax({
         type: 'post',
         url: 'email/sendEmail.php',
-        data: $('form#getInTouch').serialize(),
+        data: $('form#getInTouchForm').serialize(),
         success: function () {
           $('p#msgString').html('<p>Secure Attestation team will process your enquiry and will get back with details soon</p>');
-          $('form#getInTouch').trigger("reset");
+          $('form#getInTouchForm').trigger("reset");
         }
       });
     });

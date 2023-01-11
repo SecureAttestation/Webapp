@@ -28,7 +28,8 @@
 
         if (empty($errors)) {
             $toEmail = 'info@secureattestation.com';
-            $emailSubject = 'SecureAttestation has new enquiry';
+            $date = date('Y/m/d H:i:s');
+            $emailSubject = "SecureAttestation has new enquiry at {$date}";
             $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=utf-8', 'MIME-Version' => '1.0'];
             $bodyParagraphs = "<p>Below is the enquiry from {$firstname} {$lastname}<p> <br>";
             $bodyParagraphs .= "<p>{$message}</p> <br>";

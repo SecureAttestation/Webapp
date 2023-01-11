@@ -1503,6 +1503,154 @@ whatsapp icon
 await message loading icon
 -------------
 */
+
+.cssload-main {
+  margin-left: 160px;
+  margin-top: 280px;
+	position: inherit;
+	left: 50%;
+	transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+}
+
+.cssload-spinner {
+	position: inherit;
+}
+.cssload-spinner:before, .cssload-spinner:after {
+	content: '';
+	position: inherit;
+	display: block;
+}
+.cssload-spinner:before {
+	animation: cssload-spinner 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+		-o-animation: cssload-spinner 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+		-ms-animation: cssload-spinner 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+		-webkit-animation: cssload-spinner 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+		-moz-animation: cssload-spinner 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+	width: 58px;
+	height: 58px;
+	border: 1px solid white;
+}
+.cssload-spinner:after {
+	animation: shadow 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+		-o-animation: shadow 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+		-ms-animation: shadow 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+		-webkit-animation: shadow 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+		-moz-animation: shadow 1.995s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+	bottom: -29px;
+	height: 19px;
+	border-radius: 50%;
+}
+
+
+@keyframes cssload-spinner {
+	50% {
+		border-radius: 50%;
+		transform: scale(0.5) rotate(360deg);
+	}
+	100% {
+		transform: scale(1) rotate(720deg);
+	}
+}
+
+@-o-keyframes cssload-spinner {
+	50% {
+		border-radius: 50%;
+		-o-transform: scale(0.5) rotate(360deg);
+	}
+	100% {
+		-o-transform: scale(1) rotate(720deg);
+	}
+}
+
+@-ms-keyframes cssload-spinner {
+	50% {
+		border-radius: 50%;
+		-ms-transform: scale(0.5) rotate(360deg);
+	}
+	100% {
+		-ms-transform: scale(1) rotate(720deg);
+	}
+}
+
+@-webkit-keyframes cssload-spinner {
+	50% {
+		border-radius: 50%;
+		-webkit-transform: scale(0.5) rotate(360deg);
+	}
+	100% {
+		-webkit-transform: scale(1) rotate(720deg);
+	}
+}
+
+@-moz-keyframes cssload-spinner {
+	50% {
+		border-radius: 50%;
+		-moz-transform: scale(0.5) rotate(360deg);
+	}
+	100% {
+		-moz-transform: scale(1) rotate(720deg);
+	}
+}
+
+@keyframes shadow {
+	50% {
+		transform: scale(0.5);
+		border-color: rgb(228,228,228);
+	}
+}
+
+@-o-keyframes shadow {
+	50% {
+		-o-transform: scale(0.5);
+		border-color: rgb(228,228,228);
+	}
+}
+
+@-ms-keyframes shadow {
+	50% {
+		-ms-transform: scale(0.5);
+		border-color: rgb(228,228,228);
+	}
+}
+
+@-webkit-keyframes shadow {
+	50% {
+		-webkit-transform: scale(0.5);
+		border-color: rgb(228,228,228);
+	}
+}
+
+@-moz-keyframes shadow {
+	50% {
+		-moz-transform: scale(0.5);
+		border-color: rgb(228,228,228);
+	}
+}
+
+
+#enquiryMessage .wrapper {
+
+  background-color:rgba(0,0,0,0);
+  width: 40%;
+
+}
+
+#enquiryMessage .container {
+
+  background-color:rgba(0,0,0,0);
+
+}
+
+#enquiryMessage .wrapper a {
+
+    color: white;
+
+}
+
 #awaitMsgSent {
   position: inherit;
   width: 20%;
@@ -1551,6 +1699,7 @@ responsive
     width: 60%
   }
   #awaitMsgSent {
+    margin-top: 35%;
     margin-left: 40%;
   }
 }
