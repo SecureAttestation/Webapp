@@ -153,15 +153,16 @@
 
   $(function () {
     $('form#contact').submit(function (e) {
-      $('div#cssload-main');
-      $('div#messagePopup a')[0].click();
+      $('div#cssSpinnerLoad a')[0].click();
       e.preventDefault();
       $.ajax({
         type: 'post',
         url: 'email/sendEmail.php',
         data: $('form#contact').serialize(),
         success: function () {
-          $('p#msgString').html('<p>Secure Attestation team will process your enquiry and will get back with details soon</p>');
+          $('div#cssSpinnerLoadDiv a')[0].click();
+          $('div#messagePopup a')[0].click();
+          $('p#msgString').html('Secure Attestation team will process your enquiry and will get back with details soon');
           $('form#contact').trigger("reset");
         }
       });
@@ -172,15 +173,16 @@
   $(function () {
     $('form#getInTouchForm').submit(function (e) {
       $('div#divOne a')[0].click();
-      $('div#cssload-main');
-      $('div#messagePopup a')[0].click();
+      $('div#cssSpinnerLoad a')[0].click();
       e.preventDefault();
       $.ajax({
         type: 'post',
         url: 'email/sendEmail.php',
         data: $('form#getInTouchForm').serialize(),
         success: function () {
-          $('p#msgString').html('<p>Secure Attestation team will process your enquiry and will get back with details soon</p>');
+          $('div#cssSpinnerLoadDiv a')[0].click();
+          $('div#messagePopup a')[0].click();
+          $('p#msgString').html('Secure Attestation team will process your enquiry and will get back with details soon');
           $('form#getInTouchForm').trigger("reset");
         }
       });
