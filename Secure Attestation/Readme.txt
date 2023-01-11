@@ -4,7 +4,7 @@
             Step 2 :- Open Filezilla then go to sitemanager and create new site 
             Step 3 :- Put the host ip & select protocol SFTP - SSH File transfer protocol then choose logon type key file
             Step 4 :- Username will be bitnami then select the key file that you've downloaded then click on connect
-            Step 5 :- After connnecting you ncan upload the files on the /bitnami/htdocs folder 
+            Step 5 :- After connnecting you can upload the files on the /bitnami/htdocs folder 
 
 
 
