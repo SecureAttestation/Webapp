@@ -1108,6 +1108,13 @@ Services Style
   padding-left: 0px;
 }
 
+.our-services {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  padding-top: 150px;
+}
+
 /* 
 ---------------------------------------------
 Portfolio
@@ -1135,9 +1142,9 @@ Blog
 
 .our-countries {
   position: relative;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 30px;
-  padding-top: 120px;
+  padding-top: 150px;
 }
 
 .our-countries .section-heading h2 {
@@ -1728,9 +1735,9 @@ responsive
   .about-us .services .item .right-text {
     text-align: left;
   }
-  .our-services {
+  /* .our-services {
     margin-top: 200px;
-  }
+  } */
   .our-services .left-image {
     margin-right: 0px;
     margin-bottom: 45px;
